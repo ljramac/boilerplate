@@ -1,0 +1,30 @@
+{
+  "name": "boilerplate-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test jest --detectOpenHandles",
+    "start": "node .",
+    "dev": "nodemon .",
+    "lint": "eslint",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "16.3.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard"
+    ]
+  },
+  "lint-staged": {
+    "src/app/**/*{js}": [
+      "eslint --fix"
+    ]
+  }
+}

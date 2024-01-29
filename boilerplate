@@ -1,0 +1,10 @@
+#!/bin/zsh
+. ~/.zshrc
+
+cp -r ~/.bin/skel $1
+cd $1
+git init
+nvm install stable
+node -v > .nvmrc
+npm init -y
+npm i -DE @babel/core @babel/preset-env @commitlint/cli @commitlint/config-conventional babel-jest eslint husky jest lint-staged nodemon standard supertest
