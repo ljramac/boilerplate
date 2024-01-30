@@ -28,7 +28,7 @@ $ npm start
 
 ## Features
 
-- Retrieval of Azure functions logs
+...
 
 ## Contributing
 
